@@ -9,7 +9,17 @@ public class Fire : MonoBehaviour
     [SerializeField]
     private float damage = 1;
 
-
+    public float Damage
+    {
+        get
+        {
+            return damage;
+        }
+        private set
+        {
+            damage = value;
+        }
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
